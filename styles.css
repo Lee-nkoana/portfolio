@@ -1,8 +1,15 @@
 body{
-    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    background-color: black;
+    font-family: system-ui, "Segoe UI", "Roboto", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-image: radial-gradient( #020617 40%, #1e293b 90%);
+    background-repeat: no-repeat;
     color: white;
     padding: 10px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
 }
 
 *{
@@ -12,12 +19,106 @@ body{
 }
 
 .nav_bar{
-    display: flex;
-    align-items: right;
-    justify-content: right;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 10px;
+    font-family: "Oldenburg";
 }
 
-.nav_bar > div{
-    align-self: flex-end;
+.nav_links{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    font-size: 1.8rem;
+}
+
+.myName{
+    font-size: 2rem;
+}
+
+#hero{
+    width: 90vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    position: relative;
+}
+
+#skills{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 80%;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 50px;
+    font-family: "Oldenburg";
+}
+
+.skillsGrid{
+    display: grid;
+    width: 100%;
+    height: 95%;
+    gap: 30px;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    padding: 20px;
+}
+
+.gridSk{
+    border: 2px solid white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px 2px #2e1065;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridSk:hover{
+    border-radius: 30px;
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px 2px #6b21a8;
+}
+
+#portType{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: 6rem;
+    font-family: "Londrina Outline";
+    color: #6d28d9;
+    opacity: 0.2;
+}
+
+#intro{
+    position: absolute;
+    font-weight: 900;
+    font-size: 2.5rem;
+    width: 80%;
+}
+
+i{
+    color: #B197FC;
+    font-size: 160px;
+}
+
+#projects{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 90vh;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 50px;
+    font-family: "Oldenburg";
 }
