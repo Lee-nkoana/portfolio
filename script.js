@@ -1,4 +1,4 @@
-particlesJS("hero",{
+particlesJS("hero", {
     particles: {
         number: {
             value: 15, //number of particles(count)
