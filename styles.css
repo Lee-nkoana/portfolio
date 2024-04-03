@@ -146,4 +146,8 @@ canvas{
     height: 80%;
     border-radius: 20px;
     border: 1px solid #020617;
+    background-color: #1e293b;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    box-shadow: 5px 5px 15px 2px #0f172a;
 }
